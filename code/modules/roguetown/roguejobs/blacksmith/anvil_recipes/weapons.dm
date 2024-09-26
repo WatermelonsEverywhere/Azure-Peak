@@ -10,6 +10,12 @@
 	req_bar = /obj/item/ingot/iron
 	created_item = /obj/item/rogueweapon/sword/iron
 
+/datum/anvil_recipe/weapons/legendarysword
+	name = "Legendary Sword"
+	req_bar = /obj/item/ingot/iron
+	is_legendary = TRUE
+	created_item = /obj/item/rogueweapon/sword/iron
+
 /datum/anvil_recipe/weapons/iswordshort
 	name = "Short sword"
 	req_bar = /obj/item/ingot/iron

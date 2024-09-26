@@ -161,7 +161,7 @@
 		var/datum/anvil_recipe/R = I
 		if(!R.req_bar)
 			appro_recipe -= R
-		if(!istype(hingot, R.req_bar))
+		if(R.is_legendary && (!HAS_TRAIT(user, TRAIT_MEGASMITH) || (user.mind.get_skill_level(R.appro_skill) < SKILL_LEVEL_LEGENDARY)))
 			appro_recipe -= R
 
 	if(appro_recipe.len)
